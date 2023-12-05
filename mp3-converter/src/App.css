@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(238, 238, 238);
+}
+
+body{
+  height: 955px;
+  background-color: #FF3CAC;
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  
+}
+.navbar{
+  backdrop-filter:blur(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+.content{
+  margin-top: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 600px;
+
+}
+#text{
+  display: block;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inputarea{
+  position: relative;
+  width: 500px;
+  height: 40px;
+  margin-bottom: 20px;
+  
+  
+
+}
+#text{
+  padding-left: 16px;
+  font-size: 16px;
+  display: inline;
+  border-radius: 20px;
+  color: black;
+  width: 400px;
+  height: 40px;
+  border: none;
+  border-radius: 20px 0px 0px 20px;
+}
+#text:focus{
+  outline: 0;
+}
+#searchbutton{
+  transition: 0.1s;
+  padding-right: 32px;
+  padding-left: 12px;
+  display: inline;
+  border-radius: 0px 20px 20px 0px;
+  border: none;
+  background-color: #0731bb;
+  width: 100px;
+  height: 40px
+}
+h1{
+  font-size: 42px;
+}
+h3{
+  margin-bottom: 20px;
+}
+#search{
+  transition: 0.3s;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+}
+#searchbutton:hover{
+  cursor: pointer;
+  background-color: #000294;
+  
+}
+#searchbutton:active{
+  background-color: #0a0b5a;
+}
+#downloadbutton{
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border: none;
+  transition:0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  background-color: rgb(35, 170, 35);
+  border-radius: 8px;
+}
+#downloadbutton:hover{
+  background-color: rgb(3, 116, 3);
+}
+#download{
+  position: absolute;
+  right: 15px;
+}
+span{
+  position: absolute;
+  left: 15px;
+}
+
+@media screen and (max-width:600px) {
+  .inputarea{
+    position: relative;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 20px;
+    
+    
+  
+  }
+  #text{
+    padding-left: 16px;
+    font-size: 16px;
+    display: inline;
+    border-radius: 20px;
+    color: black;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  height: 50px;
+  bottom: 0;
+  box-shadow: 0px -1.95px 2.6px rgba(0, 0, 0, 0.15);
+
+
+}
+.fa-brands{
+  margin-left: 40px;
+  margin-right: 40px;
+}
