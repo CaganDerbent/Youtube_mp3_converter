@@ -10,6 +10,10 @@ import Footer from './components/Footer'
 // target='_blank' = new window  , rel='noreferrer'=no reference info
 
 function App() {
+
+  const KEY = import.meta.env.VITE_API_KEY;
+  const HOST = import.meta.env.VITE_API_HOST;
+
   const inputUrlRef = useRef()
   const [urlResult,setUrlResult] = useState(null)
 
@@ -25,8 +29,8 @@ function App() {
         url: 'https://youtube-mp36.p.rapidapi.com/dl',
         params: {id: youtubeID},
         headers: {
-          'X-RapidAPI-Key': 'd6dafea497mshdee72e26d5b0a6bp1c3324jsn55d76122ad79',
-          'X-RapidAPI-Host': 'youtube-mp36.p.rapidapi.com'
+          'X-RapidAPI-Key': KEY,
+          'X-RapidAPI-Host': HOST
         }
       };
    
