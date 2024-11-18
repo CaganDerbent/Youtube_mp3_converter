@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './App.css'
 import {useRef} from "react"
 import axios from "axios"
-import { youtube_parser } from './utils'
 import Footer from './components/Footer'
 
 
@@ -16,6 +15,13 @@ function App() {
 
   const inputUrlRef = useRef()
   const [urlResult,setUrlResult] = useState(null)
+
+  const youtube_parser = (url)=>{
+    var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+    var match = url.match(regExp);
+    return (match&&match[7].length==11)? match[7] : false;
+}
+
 
     const handleSubmit = (e)=>{
       e.preventDefault()
